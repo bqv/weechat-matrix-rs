@@ -18,10 +18,11 @@ clap = "2.33.0"
 async-trait = "0.1.29"
 uuid = { version = "0.8.1", features = ["v4"] }
 
-weechat = { git = "https://github.com/poljar/rust-weechat", features = ["async-executor"] }
-weechat-sys = { git = "https://github.com/poljar/rust-weechat" }
+weechat = { git = "https://github.com/poljar/rust-weechat", branch = "master", features = ["async-executor"] }
+weechat-sys = { git = "https://github.com/poljar/rust-weechat", branch = "master" }
 
 [dependencies.matrix-sdk]
 git = "https://github.com/matrix-org/matrix-rust-sdk/"
+branch = "master"
 default-features = false
 features = ["encryption", "sqlite-cryptostore"]
